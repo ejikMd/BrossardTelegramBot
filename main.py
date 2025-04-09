@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Get your bot token from environment variable
-BOT_TOKEN = os.getenv('7912626459:AAEpctl_5FIhQRZpmjVhchmrMCbLu3763Ek')
+BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello! Thanks for chatting with me!')
